@@ -12,6 +12,7 @@ The site: KSC LC-39A has the highest launch success rate, 79% of the total launc
 Missions where the payload range is between 2500 kg and 5000 kg have the highest success rate (55%) than any other range. 
 In contrast, missions where the payload is 5000 kg to 7500 kg have the lowest success rate, under 23%. 
 The F9 booster version with the highest success rate is FT.  
-
+#4. ML 
+Used a machine learning pipeline to predict if the first stage will land given the data from the preceding labs. 
 
 
