@@ -17,7 +17,7 @@ Used a machine learning pipeline to predict if the first stage will land given t
 
 The following classification methods were implemented: logistic regression, support vector machine (svm), decision tree classifier and k-nearest neighbors. 
 In the logistic regression, the following parameters were optimized using the GridSearchCV to find the best parameters of each classification algorithm. 
-The best accuracy on the test data was 83.3%, which was achieved by all four classification method after tuning the parameters. 
+The best accuracy on the test data was 83.3%, which was achieved by all four classification method after tuning the parameters. A confusion matrix was used to illustrate the errors in the predictions; the most common error was false positive, e.g, the method predicted there was a landing but the fact was that the mission did not land.
 
 
 
