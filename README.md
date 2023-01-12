@@ -15,4 +15,10 @@ The F9 booster version with the highest success rate is FT.
 # 4. ML 
 Used a machine learning pipeline to predict if the first stage will land given the data from the preceding labs. 
 
+The following classification methods were implemented: logistic regression, support vector machine (svm), decision tree classifier and k-nearest neighbors. 
+In the logistic regression, the following parameters were optimized using the GridSearchCV to find the best parameters of each classification algorithm. 
+The best accuracy on the test data was 83.3%, which was achieved by all four classification method after tuning the parameters. 
+
+
+
 
