@@ -27,6 +27,10 @@ In the logistic regression, the following parameters were optimized using the Gr
 The best accuracy on the test data was 83.3%, which was achieved by all four classification method after tuning the parameters. A confusion matrix was used to illustrate the errors in the predictions; the most common error was false positive, e.g, the method predicted there was a landing but the fact was that the mission did not land.
 ![image](https://user-images.githubusercontent.com/100446091/212206170-da121c0a-8b66-4193-9a8e-4c38e12f23ac.png)
 
+## 6. Conclusions 
+
+## 7. References 
+
 
 
 
