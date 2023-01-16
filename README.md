@@ -4,7 +4,11 @@
 python libraries used: BeautifulSoup, sklearn, folium, plotly dash,  
 
 ### 1. Data collection API
-
+Made a get request to SpaceX API. 
+The information for the Booster Falcon 9 was selected, and other boosters (Falcon 1) were filtered out. 
+The dataset was cleaned: missing values in the Payload Mass column were changed to the mean value of the column. 
+In the end, the data consists of a dataframe of 90 rows with 17 columns. 
+![Dataframe1](https://user-images.githubusercontent.com/100446091/212753055-5d1804bb-3035-4371-b371-2cb1fb36a13b.JPG)
 
 
 ### 2. Web scraping 
