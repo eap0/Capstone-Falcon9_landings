@@ -12,9 +12,7 @@ In the end, the data consists of a dataframe of 90 rows with 17 columns.
 
 
 ### 2. Web scraping 
-The data was collected from Falcon 9 historical launch records available in the Wikipedia page: https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches
-Several information was filtered out 
-
+The data was collected from Falcon 9 historical launch records available in the Wikipedia page: https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches. The library? BeautifulSoup was used to extract records from an HTML table, then parse the table and convert it into a Pandas data frame. 
 
 ### 3. Data wrangling 
 The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 VAFB SLC 4E , Vandenberg Air Force Base Space Launch Complex 4E (SLC-4E), Kennedy Space Center Launch Complex 39A KSC LC 39A.  Launches had distinct launch orbits around the Earth. In the records, the landing outcomes ranged from True + "intended location of landing", indicating a successful landing or False or None indicating failure to land. The landing outcomes were summarize in a new column called Class, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
