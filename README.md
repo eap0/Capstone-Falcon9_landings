@@ -13,12 +13,11 @@ In the end, the data consists of a dataframe of 90 rows with 17 columns.
 
 ### 2. Web scraping 
 The data was collected from Falcon 9 historical launch records available in the Wikipedia page: https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches
+Several information was filtered out 
 
 
 ### 3. Data wrangling 
-The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 VAFB SLC 4E , Vandenberg Air Force Base Space Launch Complex 4E (SLC-4E), Kennedy Space Center Launch Complex 39A KSC LC 39A.  Launches had distinct launch orbits around the Earth, illustrated in the following image:
-![Datawrangling_fig1](https://user-images.githubusercontent.com/100446091/212401695-3e20c91c-1687-49d8-89f0-4aac779e86a9.JPG)
-The landing outcomes ranged from True or False + "intended location of landing" or None indicating failure to land. The landing outcomes were summarize in a new column called Class, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
+The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 VAFB SLC 4E , Vandenberg Air Force Base Space Launch Complex 4E (SLC-4E), Kennedy Space Center Launch Complex 39A KSC LC 39A.  Launches had distinct launch orbits around the Earth. In the records, the landing outcomes ranged from True + "intended location of landing", indicating a successful landing or False or None indicating failure to land. The landing outcomes were summarize in a new column called Class, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
 
 ### 4. EDA with SQL 
 
