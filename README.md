@@ -1,7 +1,8 @@
 # SpaceX Falcon 9 mission landing predictor 
 
-### This is a repository for the final capstone project for data science certification 
-python libraries used: BeautifulSoup, sklearn, folium, plotly dash,  
+### This is a repository for the capstone project for data science certification 
+The goal is to predict if a SpaceX rocket launch with a Falcon 9 booster would be a success or a failure. A succesful rocket launch is crucial to keeping costs down, because it can be reused for following missions. Therefore proper identification of scenarios and variables that allow for a succesful launch are important. In this project I built a mission landing predictor using machine learning libraries, and used different visualization packages to get insight of the relevant variables for the missions. 
+Main python libraries used include: BeautifulSoup, sklearn, folium, plotly dash. 
 
 ### 1. Data collection API
 Made a get request to SpaceX API. 
@@ -15,7 +16,7 @@ In the end, the data consists of a dataframe of 90 rows with 17 columns.
 The data was collected from Falcon 9 historical launch records available in the Wikipedia page: https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches. The library? BeautifulSoup was used to extract records from an HTML table, then parse the table and convert it into a Pandas data frame. 
 
 ### 3. Data wrangling 
-The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 VAFB SLC 4E , Vandenberg Air Force Base Space Launch Complex 4E (SLC-4E), Kennedy Space Center Launch Complex 39A KSC LC 39A.  Launches had distinct launch orbits around the Earth. In the records, the landing outcomes ranged from True + "intended location of landing", indicating a successful landing or False or None indicating failure to land. The landing outcomes were summarize in a new column called Class, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
+The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 **VAFB SLC 4E** , Vandenberg Air Force Base Space Launch Complex 4E (**SLC-4E**), Kennedy Space Center Launch Complex 39A **KSC LC 39A**.  Launches had distinct launch orbits around the Earth. In the records, the landing outcomes ranged from True + "intended location of landing", indicating a successful landing or False or None indicating failure to land. The landing outcomes were summarize in a new column called **Class**, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
 
 ### 4. EDA with SQL 
 
