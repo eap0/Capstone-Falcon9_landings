@@ -45,6 +45,7 @@ The best accuracy on the test data was 83.3%, which was achieved by all four cla
 ![image](https://user-images.githubusercontent.com/100446091/212206170-da121c0a-8b66-4193-9a8e-4c38e12f23ac.png)
 
 ### 9. Conclusions 
+First location is important for launch 
 
 ### 10. References 
 
