@@ -16,7 +16,7 @@ In the end, the data consists of a dataframe of 90 rows with 17 columns.
 The data was collected from Falcon 9 historical launch records available in the Wikipedia page: https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches. The library? BeautifulSoup was used to extract records from an HTML table, then parse the table and convert it into a Pandas data frame. 
 
 ### 3. Data wrangling 
-The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 **VAFB SLC 4E** , Vandenberg Air Force Base Space Launch Complex 4E (**SLC-4E**), Kennedy Space Center Launch Complex 39A **KSC LC 39A**.  Launches had distinct launch orbits around the Earth. In the records, the landing outcomes ranged from True + "intended location of landing", indicating a successful landing or False or None indicating failure to land. The landing outcomes were summarize in a new column called **Class**, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
+The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 **CCAFS LC-40** and **CCAFS SLC-40**, Vandenberg Air Force Base Space Launch Complex 4E (**VAFB SLC-4E**), Kennedy Space Center Launch Complex 39A **KSC LC 39A**.  Launches had distinct launch orbits around the Earth. In the records, the landing outcomes ranged from True + "intended location of landing", indicating a successful landing or False or None indicating failure to land. The landing outcomes were summarize in a new column called **Class**, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
 
 ### 4. EDA with SQL 
 In this section, I used IBM's Watson studio to load the table in a Db2 dataset and inspect the dataset executing SQL queries. The table includes records for wach payload carried during a SpaceX mission to outer space. The total payload mass carried by boosters launched by NASA (CRS) is 45,596 kg. The average payload mass carried by a F9 booster v1.1 is 2,928.4 kg. The first succesful landing outcome was achieved in December 12, 2015. 
@@ -30,7 +30,7 @@ In this section, I used Folium to explore the location of the launch sites as a 
 All of the locations were close to the coastline, most launch sites were located at a distance of 1 km or less from the coast. The most succesful site is **KSC LC-39A** located in Florida, with a 79% success rate. KSC LC-39A is located more than 4 km from the coast. It is about 1 km away from a railway or highway. The closest city/town is Titusville, which is less than 20 km away.  
 
 ### 7. Interactive dashboard  
-The location with the largest success launches is site CCAFS LC-40 in Florida. 
+The location with the largest success launches is site **CCAFS LC-40** in Florida. 
 The site: KSC LC-39A has the highest launch success rate, 79% of the total launches were sucessful. 
 Missions where the payload range is between 2500 kg and 5000 kg have the highest success rate (55%) than any other range. 
 In contrast, missions where the payload is 5000 kg to 7500 kg have the lowest success rate, under 23%. 
