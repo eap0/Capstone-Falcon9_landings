@@ -23,10 +23,9 @@ The analysis of the data at this stage, showed that there were several Space X l
 In this section, I used IBM's Watson studio to load the table in a Db2 dataset and inspect the dataset executing SQL queries. The table includes records for wach payload carried during a SpaceX mission to outer space. The total payload mass carried by boosters launched by NASA (CRS) is 45,596 kg. The average payload mass carried by a F9 booster v1.1 is 2,928.4 kg. The first succesful landing outcome was achieved in December 12, 2015. 
 
 ### 5. EDA with Visualization 
-
-The rocket launch trend increases between the years  of 2013 to 2020. 
+Preliminary insights started to become evident as different variables (were explored Payload mass, launch orbit, flight number, launch site).
+The successful rocket launch trend increases between the years  of 2013 to 2020. Also some rocket launches are more succesful than others.
 ![image](https://user-images.githubusercontent.com/100446091/224441646-11dd70ce-ab02-4208-96a8-508ffe165793.png)
-Some rocket launches are more succesful than others.
 ![image](https://user-images.githubusercontent.com/100446091/224441822-6b4954b7-0aa0-4a41-831c-f919a9a7cc5c.png)
 
 
