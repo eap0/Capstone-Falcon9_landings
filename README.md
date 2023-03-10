@@ -15,6 +15,7 @@ In the end, the data consists of a dataframe of 90 rows with 17 columns.
 ### 2. Web scraping 
 The data was collected from Falcon 9 historical launch records available in the Wikipedia page: https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches. The library? BeautifulSoup was used to extract records from an HTML table, then parse the table and convert it into a Pandas data frame. 
 
+
 ### 3. Data wrangling 
 The analysis of the data at this stage, showed that there were several Space X launch facilities: Cape Canaveral Space Launch Complex 40 **CCAFS LC-40** and **CCAFS SLC-40**, Vandenberg Air Force Base Space Launch Complex 4E (**VAFB SLC-4E**), Kennedy Space Center Launch Complex 39A **KSC LC 39A**.  Launches had distinct launch orbits around the Earth. In the records, the landing outcomes ranged from True + "intended location of landing", indicating a successful landing or False or None indicating failure to land. The landing outcomes were summarize in a new column called **Class**, were 1 means that the landing was a success or 0 if the landing was a failure. This is the variable that we will predict latter on. More info can be followed in the python notebook here.
 
@@ -22,6 +23,13 @@ The analysis of the data at this stage, showed that there were several Space X l
 In this section, I used IBM's Watson studio to load the table in a Db2 dataset and inspect the dataset executing SQL queries. The table includes records for wach payload carried during a SpaceX mission to outer space. The total payload mass carried by boosters launched by NASA (CRS) is 45,596 kg. The average payload mass carried by a F9 booster v1.1 is 2,928.4 kg. The first succesful landing outcome was achieved in December 12, 2015. 
 
 ### 5. EDA with Visualization 
+
+The rocket launch trend increases between the years  of 2013 to 2020. 
+![image](https://user-images.githubusercontent.com/100446091/224441646-11dd70ce-ab02-4208-96a8-508ffe165793.png)
+Some rocket launches are more succesful than others.
+![image](https://user-images.githubusercontent.com/100446091/224441822-6b4954b7-0aa0-4a41-831c-f919a9a7cc5c.png)
+
+
 
 ### 6. Plotting with Folium 
 In this section, I used Folium to explore the location of the launch sites as a factor in the launch success rate. The four launch sites are located in two states, either California or Florida. Markers were put in each location to show the number of launches, and color was added to show success (green) or failure (red), like in the following image:  ![image](https://user-images.githubusercontent.com/100446091/214718652-b27fa197-aa41-46c5-b39f-57c79026c8ae.png)
