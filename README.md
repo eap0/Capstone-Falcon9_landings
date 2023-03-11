@@ -63,7 +63,17 @@ A confusion matrix was used to illustrate the errors in the predictions; the mos
 ![image](https://user-images.githubusercontent.com/100446091/212206170-da121c0a-8b66-4193-9a8e-4c38e12f23ac.png)
 
 ### 9. Conclusions 
-First location is important for launch 
+Several variables were identified to have an impact on the landing outcome. These variables are: payload mass (in kg), launch orbit, launch flight number, and launch site. ​
+
+Launches with payload mass in the range of  2500-5000 kg have the most successful rate launches. Launch orbits GEO, SSS and  had the most successful rates. ​
+
+The success rate of landing increased from 2013 to 2020, which could indicate that latter launches benefitted from the information from previous launches. ​
+
+Launch location impacted the landing outcome. Ideally the location would have to be 6 km from the coastline. Site KSC LC-39A in Florida had the highest launch rates, it is ~6 km from the coastline. The biggest city/town is several tenths of kilometers away. ​
+
+As expected, the machine learning models trained on the data that contained these variables had an accuracy of 83.3% in successfully predicting the outcome of the landing. ​
+
+Following the recommendations can reduce the cost of launches from ~165 millions to ~62 millions (est. cost numbers from Space X model)
 
 ### 10. References 
 
