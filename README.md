@@ -1,8 +1,11 @@
 # SpaceX Falcon 9 mission landing predictor 
 
 ### This is a repository for the capstone project for data science certification 
-The goal is to predict if a SpaceX rocket launch with a Falcon 9 booster would be a success or a failure. A succesful rocket launch is crucial to keeping costs down, because it can be reused for following missions. Therefore proper identification of scenarios and variables that allow for a succesful launch are important. In this project I built a mission landing predictor using machine learning libraries, and used different visualization packages to get insight of the relevant variables for the missions. 
-Main python libraries used include: BeautifulSoup, sklearn, seaborn, matplotlib, folium, plotly dash. SQL was also used in the exploratory section. 
+The goal is to predict if a SpaceX rocket launch with a Falcon 9 booster would be a success or a failure. A successful rocket launch is crucial to keeping costs down, because it can be reused for following missions. Therefore proper identification of scenarios and variables that allow for a succesful launch are important. In this project I built a mission landing predictor using machine learning libraries, and used different visualization packages to get insight of the relevant variables for the missions. 
+Main python libraries used include: BeautifulSoup, sklearn, seaborn, matplotlib, folium, plotly dash. SQL was also used in the data exploration section. 
+
+ ![image](https://user-images.githubusercontent.com/100446091/224451233-b7dcc3c9-9338-4316-b0d0-d59a98e7ce11.png)
+Picture from IBM lab –Data collection API
 
 ### 1. Data collection API
 Made a get request to SpaceX API. 
@@ -36,19 +39,27 @@ In this section, I used Folium to explore the location of the launch sites as a 
 
 All of the locations were close to the coastline, most launch sites were located at a distance of 1 km or less from the coast. The most succesful site is **KSC LC-39A** located in Florida, with a 79% success rate. KSC LC-39A is located more than 4 km from the coast. It is about 1 km away from a railway or highway. The closest city/town is Titusville, which is less than 20 km away.  
 
-### 7. Interactive dashboard  
+### 7. Interactive Plotly dash that helps visualize the impact of the variables on the outcome 
 The location with the largest success launches is site **CCAFS LC-40** in Florida. 
-The site: KSC LC-39A has the highest launch success rate, 79% of the total launches were sucessful. 
+The site: KSC LC-39A has the highest launch success rate, 79% of the total launches were successful. 
 Missions where the payload range is between 2500 kg and 5000 kg have the highest success rate (55%) than any other range. 
 In contrast, missions where the payload is 5000 kg to 7500 kg have the lowest success rate, under 23%. 
 The F9 booster version with the highest success rate is FT.  
+Examples:
+![image](https://user-images.githubusercontent.com/100446091/224448823-2921441d-177c-4223-b41d-6a9035ec395c.png)
+![image](https://user-images.githubusercontent.com/100446091/224451814-5affb919-8175-4e5b-84dd-6cf89af542db.png)
 
-### 8. Machine learning  
-Used a machine learning pipeline to predict if the first stage will land given the data from the preceding labs. 
+
+
+### 8. Application of machine learning to predict a successful landing  
+Finally a machine learning (ML) pipeline was used to predict if the first stage will have a successful landing using the data from the preceding labs. 
 
 The following classification methods were implemented: logistic regression, support vector machine (svm), decision tree classifier and k-nearest neighbors. 
 In the logistic regression, the following parameters were optimized using the GridSearchCV to find the best parameters of each classification algorithm. 
-The best accuracy on the test data was 83.3%, which was achieved by all four classification method after tuning the parameters. A confusion matrix was used to illustrate the errors in the predictions; the most common error was false positive, e.g, the method predicted there was a landing but the fact was that the mission did not land.
+
+The ML predictor showed high accuracy. The best accuracy on the test data was 83.3%, which was achieved by all four classification method after tuning the parameters.
+
+A confusion matrix was used to illustrate the errors in the predictions; the most common error was false positive, e.g, the method predicted there was a landing but the fact was that the mission did not land.
 ![image](https://user-images.githubusercontent.com/100446091/212206170-da121c0a-8b66-4193-9a8e-4c38e12f23ac.png)
 
 ### 9. Conclusions 
