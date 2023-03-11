@@ -75,7 +75,6 @@ As expected from the exploratory analysis, the machine learning models trained o
 
 Following the recommendations can reduce the cost of launches from ~165 millions to ~62 millions (est. cost numbers from Space X model)
 
-### 10. References 
 
 
 
