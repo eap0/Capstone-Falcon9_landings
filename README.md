@@ -71,7 +71,7 @@ The success rate of landing increased from 2013 to 2020, which could indicate th
 
 Launch location impacted the landing outcome. Ideally the location would have to be 6 km from the coastline. Site KSC LC-39A in Florida had the highest launch rates, it is ~6 km from the coastline. The biggest city/town is several tenths of kilometers away. ​
 
-As expected, the machine learning models trained on the data that contained these variables had an accuracy of 83.3% in successfully predicting the outcome of the landing. ​
+As expected from the exploratory analysis, the machine learning models trained on the data that contained these variables had an accuracy of 83.3% in successfully predicting the outcome of the landing. ​
 
 Following the recommendations can reduce the cost of launches from ~165 millions to ~62 millions (est. cost numbers from Space X model)
 
